@@ -1,12 +1,35 @@
 {
+  "name": "poor-gate",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "dependencies": {
-    "@radixdlt/babylon-gateway-api-sdk": "^1.10.0-dev.1",
-    "@radixdlt/radix-connect-webrtc": "^1.2.2",
-    "@radixdlt/radix-dapp-toolkit": "^2.2.1",
-    "@radixdlt/rola": "^2.1.0",
-    "isomorphic-fetch": "^3.0.0",
-    "neverthrow": "^8.1.1",
-    "rxjs": "^7.8.1",
-    "telegraf": "^4.16.3"
+    "@supabase/supabase-js": "^2.48.1",
+    "@types/express": "^5.0.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "telegraf": "^4.16.3",
+    "uuid": "^11.0.5"
+  },
+  "devDependencies": {
+    "@flydotio/dockerfile": "^0.7.4",
+    "@types/node": "^22.13.1",
+    "@types/uuid": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.24.0",
+    "@typescript-eslint/parser": "^8.24.0",
+    "eslint": "^9.20.1",
+    "prettier": "^3.5.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
   }
 }
